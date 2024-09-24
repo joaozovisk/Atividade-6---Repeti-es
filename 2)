@@ -1,0 +1,26 @@
+programa
+{
+    funcao inicio()
+    {
+
+        real numero, soma = 0, media
+        inteiro contador
+        
+
+        para (contador = 1; contador <= 5; contador++)
+        {
+            escreva("Digite o ", contador, "º número: ")
+            leia(numero)
+            
+            // Soma dos números
+            soma = soma + numero
+        }
+        
+
+        media = soma / 5
+        
+
+        escreva("A soma dos números é: ", soma, "\n")
+        escreva("A média dos números é: ", media, "\n")
+    }
+}
