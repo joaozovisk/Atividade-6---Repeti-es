@@ -1,0 +1,25 @@
+programa
+{
+    funcao inicio()
+    {
+        real numero, maiorNumero
+        inteiro contador
+        
+        escreva("Digite o 1º número: ")
+        leia(numero)
+        maiorNumero = numero
+        
+        para (contador = 2; contador <= 5; contador++)
+        {
+            escreva("Digite o ", contador, "º número: ")
+            leia(numero)
+            
+            se (numero > maiorNumero)
+            {
+                maiorNumero = numero
+            }
+        }
+        
+        escreva("O maior número é: ", maiorNumero, "\n")
+    }
+}
