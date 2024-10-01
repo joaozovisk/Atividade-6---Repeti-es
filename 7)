@@ -4,7 +4,7 @@ programa
     {
         inteiro numero, fatorial = 1, contador
 
-        escreva("Digite um número para calcular o fatorial: ")
+        escreva("Digite um número: ")
         leia(numero)
 
         para (contador = 1; contador <= numero; contador++)
