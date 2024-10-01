@@ -1,0 +1,22 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro term1 = 0, termo2 = 1, proximoTermo, n, contador
+
+        escreva("Digite o valor de numeros da série): ")
+        leia(n)
+
+        escreva("Série de Fibonacci até o ", n, "º termo:\n")
+        escreva(term1, ", ", termo2, ", ")
+
+        para (contador = 3; contador <= n; contador++)
+        {
+            proximoTermo = term1 + termo2
+            escreva(proximoTermo, ", ")
+
+            term1 = termo2
+            termo2 = proximoTermo
+        }
+    }
+}
