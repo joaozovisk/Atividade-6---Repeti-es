@@ -1,22 +1,22 @@
 programa
 {
-    funcao inicio()
-    {
-        inteiro term1 = 0, termo2 = 1, proximoTermo, n, contador
+	
+	funcao inicio()
+	{
+		real n_atual = 1.0
+		real n_anterior = 0.0
+		real n_proximo = 0.0
+		real limite
+		escreva("Informe um valor limite: ")
+		leia(limite)
 
-        escreva("Digite o valor de numeros da série): ")
-        leia(n)
+		enquanto(n_atual <= limite)
+		{
+			escreva(n_atual, "\n")
+			n_proximo = n_atual + n_anterior
 
-        escreva("Série de Fibonacci até o ", n, "º termo:\n")
-        escreva(term1, ", ", termo2, ", ")
-
-        para (contador = 3; contador <= n; contador++)
-        {
-            proximoTermo = term1 + termo2
-            escreva(proximoTermo, ", ")
-
-            term1 = termo2
-            termo2 = proximoTermo
-        }
-    }
+			n_anterior = n_atual
+			n_atual = n_proximo
+		}
+	}
 }
