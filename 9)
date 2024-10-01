@@ -1,0 +1,58 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro N, i, numero, menor, maior, soma = 0
+        
+        escreva("Digite a quantidade de números que deseja inserir: ")
+        leia(N)
+        
+        se (N > 0)
+        {
+            escreva("Digite o 1º número (entre 0 e 1000): ")
+            leia(numero)
+            
+            enquanto (numero < 0 ou numero > 1000)
+            {
+                escreva("Número inválido! Digite um número entre 0 e 1000: ")
+                leia(numero)
+            }
+            
+            menor = numero
+            maior = numero
+            soma = numero
+
+            para (i = 2; i <= N; i++)
+            {
+                escreva("Digite o ", i, "º número (entre 0 e 1000): ")
+                leia(numero)
+
+                enquanto (numero < 0 ou numero > 1000)
+                {
+                    escreva("Número inválido! Digite um número entre 0 e 1000: ")
+                    leia(numero)
+                }
+                
+                se (numero < menor)
+                {
+                    menor = numero
+                }
+                
+                se (numero > maior)
+                {
+                    maior = numero
+                }
+                
+                soma = soma + numero
+            }
+            
+            escreva("O menor valor é: ", menor, "\n")
+            escreva("O maior valor é: ", maior, "\n")
+            escreva("A soma dos valores é: ", soma, "\n")
+        }
+        senao
+        {
+            escreva("A quantidade de números deve ser maior que zero.\n")
+        }
+    }
+}
