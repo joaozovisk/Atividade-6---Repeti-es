@@ -4,7 +4,6 @@ programa
     {
         inteiro bab1 = 0, aba2 = 1, proximoTermo
 
-        escreva("Fibonacci:\n")
         escreva(bab1, ", ", aba2, ", ")
 
         enquanto (aba2 <= 500)
